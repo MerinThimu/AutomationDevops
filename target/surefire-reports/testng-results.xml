@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-26T22:34:38 IST" name="Suite" finished-at="2025-01-26T22:34:49 IST" duration-ms="11368">
+    <groups>
+    </groups>
+    <test started-at="2025-01-26T22:34:38 IST" name="HomePageTest" finished-at="2025-01-26T22:34:44 IST" duration-ms="5707">
+      <class name="com.CRM.testcases.HomePageTestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.testcases.HomePageTestCase@3d51f06e]" started-at="2025-01-26T22:34:38 IST" name="setup" finished-at="2025-01-26T22:34:42 IST" duration-ms="4228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUrl()[pri:1, instance:com.CRM.testcases.HomePageTestCase@3d51f06e]" started-at="2025-01-26T22:34:42 IST" name="verifyUrl" finished-at="2025-01-26T22:34:42 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUrl -->
+        <test-method signature="verifyTitle()[pri:2, instance:com.CRM.testcases.HomePageTestCase@3d51f06e]" started-at="2025-01-26T22:34:42 IST" name="verifyTitle" finished-at="2025-01-26T22:34:42 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="validateSigninLink()[pri:3, instance:com.CRM.testcases.HomePageTestCase@3d51f06e]" started-at="2025-01-26T22:34:42 IST" name="validateSigninLink" finished-at="2025-01-26T22:34:43 IST" duration-ms="1227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSigninLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.CRM.testcases.HomePageTestCase@3d51f06e]" started-at="2025-01-26T22:34:43 IST" name="tearDown" finished-at="2025-01-26T22:34:44 IST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.CRM.testcases.HomePageTestCase -->
+    </test> <!-- HomePageTest -->
+    <test started-at="2025-01-26T22:34:44 IST" name="LoginPageTest" finished-at="2025-01-26T22:34:49 IST" duration-ms="5613">
+      <class name="com.CRM.testcases.LoginPageTestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.testcases.LoginPageTestCase@8dbdac1]" started-at="2025-01-26T22:34:44 IST" name="setup" finished-at="2025-01-26T22:34:46 IST" duration-ms="2855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="pageSetup()[pri:0, instance:com.CRM.testcases.LoginPageTestCase@8dbdac1]" started-at="2025-01-26T22:34:46 IST" name="pageSetup" finished-at="2025-01-26T22:34:48 IST" duration-ms="1363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetup -->
+        <test-method signature="validateLogin()[pri:0, instance:com.CRM.testcases.LoginPageTestCase@8dbdac1]" started-at="2025-01-26T22:34:48 IST" name="validateLogin" finished-at="2025-01-26T22:34:49 IST" duration-ms="1196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.CRM.testcases.LoginPageTestCase@8dbdac1]" started-at="2025-01-26T22:34:49 IST" name="tearDown" finished-at="2025-01-26T22:34:49 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.CRM.testcases.LoginPageTestCase -->
+    </test> <!-- LoginPageTest -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,85 @@
+
+Maven
+=============
+Maven is build management tool.
+  
+Notes url : https://maven.apache.org/guides/index.html 
+
+Maven project execution (3 ways)
+========================
+1.Using pom.xml
+2.Using CLI
+3.Using Jenkins
+
+=====================================================================================================
+1)Using pom.xml: 
+Setup:
+
+1.Plugins:
+------------------------------------------------------------------------------------------------------
+  - Compiler Plugin:
+  
+    a. Navigate to - https://maven.apache.org/plugins/maven-compiler-plugin/ 
+    b. Compiling Sources Using A Different JDK
+    c. Give java path as below
+    
+    	 <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+          <verbose>true</verbose>
+          <fork>true</fork>
+          <executable>${JAVA_HOME}/bin/javac</executable>   // here add java path from environment variables
+          <compilerVersion>1.3</compilerVersion>
+        </configuration>
+      </plugin>
+--------------------------------------------------------------------    
+  - surefire plugin
+  
+  a.  Navigate to -  https://maven.apache.org/surefire/maven-surefire-plugin/
+  b. Scroll down >> click on 'using testNG'
+  c. Scroll>> Using suite XML files
+  
+   <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.2</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>crm.xml</suiteXmlFile>  // here replace testng with project xml file
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+  
+  --------------------------------------------------
+  - Next step update maven project to remove errors
+  - Maven clean
+  -Maven test
+  - Refresh project>> check target folder>> folders generated>> target-properties>> go to folder location>> emailable report open in google
+  - Maven clean - all reports in target folder gets deleted
+  
+2.Goals to execute Maven:
+  - clean : To delete reports from target folder
+  - test  : To test project
+  - install : Installation of required files + test
+  
+ ====================================================================================================
+  
+ 2.Using CLI (command line)
+  
+  - First downlaod Maven in local machine. URL- https://maven.apache.org/download.cgi
+  - Binary zip archive	apache-maven-3.9.9-bin.zip
+  - Set up maven home in env variable and system var
+  - open cmd prompt>> type mvn -version
+  - copy properties >>file path of project from eclipse
+  - type-> cd <path name>
+  - currently inside path directory 
+  - mvn -clean 
+  - mvn -test
+ ================================================================================================   
+  
+ 3.Using Jenkins   
+ 
+ -- open git bash>> git --version
+ 
